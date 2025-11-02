@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <!-- Sets content tyle of page -->
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1252" />
+    <!-- Title of page in tab in browser !-->
+    <title>Espaces Verts Montreal</title>
+    <!-- Links scripct code to D3 -->
+    <link rel="stylesheet" href="main.css" />
+    <link href="https://cdn.jsdelivr.net/npm/js.sortable@0.8.0/css/sortable-theme-minimal.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- linking to Javascript docs -->
+    <script src="https://d3js.org/d3.v7.js"></script>
+    <script type="module" src="script.js"></script>
+    <script src="https://unpkg.com/@turf/turf@7/turf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/js.sortable@0.8.0/js/sortable.min.js"></script>
+    <h1>Espaces Verts aux Montreal</h1>
+    <div id="desc"> Cliquez sur ton quartier pour voir ses parcs et espaces publiques!
+        <div class="caption">Données de <a
+                href="https://donnees.montreal.ca/fr/dataset/grands-parcs-parcs-d-arrondissements-et-espaces-publics">le
+                site des données ouvertes de la Ville de Montreal</a> (dernière mise à jour
+            8 septembre 2025).</div>
+    </div>
+    <div id="map"></div>
+    <div id="controls">
+        <label for="spacetypes">Type d'espace: </label>
+        <select name="spacetypes" id="spacetypes">
+            <option value="Tout">Tout</option>
+            <option value="Parc d'arrondissement">Parc d'arrondissement</option>
+            <option value="Grand parc">Grand parc</option>
+            <option value="Espace voirie">Espace voirie</option>
+            <option value="Autre espace vert">Autre espace vert</option>
+        </select>
+        <label for="streetscheckbox">Montrer des rues</label>
+        <input type="checkbox" id="streetscheckbox">
+    </div>
+    <div id="neighborhoodinfo">
+        <div id="minimap"></div>
+        <div id="neighborhoodname"></div>
+        <div id="areainfo"></div>
+        <div id="spacescontainer">
+            <table id="spaces" data-sortable>
+                <thead></thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="instruct">
+        </div>
+    </div>
+
+</body>
+
+</html>

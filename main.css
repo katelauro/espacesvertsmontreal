@@ -1,0 +1,98 @@
+body {
+  font-family: "Helvetica", sans-serif;
+  color: #212121;
+  background:#fafafa;
+}
+
+h1 {
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+#map {
+  width: 55%;
+  height: 80%;
+  float: left;
+}
+
+#neighborhoodinfo {
+  height: 90%;
+  width: 40%;
+  margin: -50% 4% 5% 1%;
+  float: right;
+}
+
+#neighborhoodname {
+  margin-top: -2%;
+  margin-bottom: 4%;
+}
+
+#minimap {
+  width: 75%;
+  aspect-ratio: 1/1;
+  padding: 1%;
+  margin: -3% 12.5% 0% 12.5%;
+}
+
+#spacescontainer {
+  margin-top: 2%;
+  max-height: 35%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  border-top: 1px solid transparent;
+  border-bottom: 1px transparent;
+  border-right:1px transparent;
+}
+
+#spaces {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#spaces thead {
+  top: 0;
+  position: sticky;
+  background: #fafafa;
+}
+
+#spaces th {
+  text-align: left;
+  border-bottom: 2px solid #212121;
+  border-left: 1px solid #212121;
+  padding: 1%;
+}
+
+#spaces td {
+  text-align: left;
+  border-top: 1px solid #212121;
+  border-left: 1px solid #212121;
+  padding: 1%;
+}
+
+#controls {
+  float: left;
+  width: 53%;
+  margin-top: 1%;
+  margin-left: 2%;
+}
+
+#desc {
+  float: left;
+  width: 53%;
+  margin-top: -1%;
+  margin-left: 2%;
+}
+
+#instruct {
+  margin-top: 2%;
+}
+
+.caption {
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+#areainfo {
+  margin-top: -4%;
+}
